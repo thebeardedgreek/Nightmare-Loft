@@ -3,6 +3,8 @@ import static java.lang.System.out;
 public class floorOne {
     static int monsterHeight = 2;
     static int monsterWidth = 13;
+    static int[] verticalWalls = {3, 4};
+    static int[] horizontalWalls = {6, 7};
 
     public static void monsterMove(){
         if (monsterHeight > Game.playerHeight){
@@ -15,7 +17,7 @@ public class floorOne {
         } else if(monsterWidth < Game.playerHeight){
             monsterWidth += 1;
         }
-        out.println(monsterHeight + " " + monsterWidth);
+        out.println(monsterWidth + " " + monsterHeight);
     }
 
     public static void monsterCollision(){
